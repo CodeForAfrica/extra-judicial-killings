@@ -880,6 +880,7 @@ footer a:hover {
 .glass-box {
     border:1px solid #ccc;
     padding:10px;
+    height:auto;
 }
 .tags span:after{
     content: '';
@@ -890,4 +891,15 @@ footer a:hover {
     background-color: #2a2a2a;
     border-radius: 40em;
 }
+.dropdown {
+    display:inline-block;
+}
+.num {
+    float:right;
+    color: #888;
+    font-size:12px;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #f4f4f4;
 }

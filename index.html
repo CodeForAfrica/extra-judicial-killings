@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/hint.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
@@ -24,44 +25,93 @@
       <div class="inner clearfix">
         <section id="main-content">
           <section style="text-align:center;">
-            <span class="big-num">1500</span><br>
-            <span>Extra Judicial Killings Since 2009</span>
+            <span class="big-num">1,500</span><br>
+            <span>extra judicial killings since 2009</span>
 
           </section>
           <br clear="all"/>
+          <br clear="all"/>
+          <hr>
           <section>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                County
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Nairobi <span class="num">406</span></a></li>
+                <li><a href="#">Machakos <span class="num">70</span></a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Age
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Under 18 <span class="num">4</span></a></li>
+                <li><a href="#">18-34 <span class="num">414</span></a></li>
+                <li><a href="#">35-54 <span class="num">30</span></a></li>
+                <li><a href="#">55+ <span class="num">3</span></a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Gender
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Male <span class="num">450</span></a></li>
+                <li><a href="#">Female <span class="num">6</span></a></li>
+              </ul>
+            </div>
+            <br clear="all"/>
+            <br clear="all"/>
             <script>
-              for (var i = 0; i < 400; i++) {
+              for (var i = 0; i < 396; i++) {
                 document.write('<span class="hint--top" data-hint="John Doe" ><i class="fa fa-male fa-3x " aria-hidden="true"></i></span>')
               }
             </script>
             <br clear="all"/>
             <br clear="all"/>
+            <center><i class="fa fa-chevron-left"></i> 1 of 1500 <i class="fa fa-chevron-right"></i></center>
             <div class="glass-box">
               <div class="desc">
-                <span><b>John Doe</b>, a 29-year-old black man armed with a gun, was shot on July 17, 2016, in Baton Rouge, La. Long died in a shootout with Baton Rouge police after he shot and killed three officers and wounded several others.</span>
+                <span><b>John Doe</b>
+                  <br>Huyo sio mwizi. Anauza nyama pare gara. Sasa amekutiliwa akikojoa na hao maaskari. Sasa kuona hatawangonjea akatoka mbio. Ndiyo akapigwa risasi. Sasa kupigwa risasi, akauliwa. Sasa kuuliwa, wakakuja na kitu intaitwa bonoko. Wakamwekelea bonoko.</span>
               </div>
               <div class="tags">
                 <span>Man</span>
                 <span>18</span>
-                <span>Mavoko</span>
+                <span>Nairobi</span>
               </div>
               <small><script>document.write(new Date())</script></small>
             </div>
           </section>
           <br clear="all"/>
+          <br clear="all"/>
+          <hr>
           <section>
             <div id="chart-container">Loading</div>
           </section>
 
         </section>
 
+          <hr>
+         <footer>
+          <div style="float:left;">
+            <p class="view"><a href="https://github.com/CodeForAfricaLabs/extra-judicial-killings">View the Project on GitHub <small>CodeForAfricaLabs/extra-judicial-killings</small></a></p>
+            <p>This project is maintained by <a href="https://github.com/CodeForAfricaLabs">CodeForAfricaLabs</a></p>
+          </div>
+          <img src="images/cfafrica-logo.png" style="height:100px;float:right;"/>
+        </footer>
       </div>
     </div>
 
   
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
   <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>

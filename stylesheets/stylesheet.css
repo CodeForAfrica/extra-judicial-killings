@@ -742,7 +742,6 @@ footer {
   margin-top: 40px;
   font-size: 13px;
   color: #aaa;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
 
 footer a {
@@ -902,4 +901,8 @@ footer a:hover {
 
 .dropdown-menu li {
     border-bottom: 1px solid #f4f4f4;
+}
+#chartdiv {
+	width	: 100%;
+	height	: 500px;
 }

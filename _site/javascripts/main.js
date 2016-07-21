@@ -18,7 +18,7 @@ $(document).ready(function(){
             dataFormat: 'json',
             dataSource: {
                 "chart": {
-                    "caption": "Number of Extra Judicial Killings",
+                    "caption": "",
                     "subCaption": "",
                     "captionFontSize": "14",
                     "subcaptionFontSize": "14",
@@ -117,4 +117,32 @@ $(document).ready(function(){
         );
         fusioncharts.render();
     });
+
+    var map = AmCharts.makeChart( "chartdiv", {
+      type: "map",
+      "theme": "light",
+
+      colorSteps: 10,
+
+      dataProvider: {
+        map: "kenyaHigh",
+        areas: [{id: 'KE-01', value: 129}, {id: 'KE-02', value: 172}, {id: 'KE-03', value: 3569}, {id: 'KE-04', value: 4085}, {id: 'KE-05', value: 2494}, {id: 'KE-06', value: 3741}, {id: 'KE-07', value: 3956}, {id: 'KE-08', value: 4171}, {id: 'KE-09', value: 1118}, {id: 'KE-10', value: 215}, {id: 'KE-11', value: 3096}, {id: 'KE-12', value: 1849}, {id: 'KE-13', value: 1591}, {id: 'KE-14', value: 258}, {id: 'KE-15', value: 0}, {id: 'KE-16', value: 1376}, {id: 'KE-17', value: 0}, {id: 'KE-18', value: 2322}, {id: 'KE-19', value: 3182}, {id: 'KE-20', value: 3182}, {id: 'KE-21', value: 2967}, {id: 'KE-22', value: 301}, {id: 'KE-23', value: 3956}, {id: 'KE-24', value: 2279}, {id: 'KE-25', value: 1161}, {id: 'KE-26', value: 0}, {id: 'KE-27', value: 3010}, {id: 'KE-28', value: 2881}, {id: 'KE-29', value: 4257}, {id: 'KE-30', value: 2924}, {id: 'KE-31', value: 3569}, {id: 'KE-32', value: 2322}, {id: 'KE-33', value: 1935}, {id: 'KE-34', value: 3268}, {id: 'KE-35', value: 1634}, {id: 'KE-36', value: 2236}, {id: 'KE-37', value: 1290}, {id: 'KE-38', value: 774}, {id: 'KE-39', value: 2150}, {id: 'KE-40', value: 258}, {id: 'KE-41', value: 3354}, {id: 'KE-42', value: 3655}, {id: 'KE-43', value: 473}, {id: 'KE-44', value: 3870}, {id: 'KE-45', value: 688}, {id: 'KE-46', value: 3483}, {id: 'KE-47', value: 989}]
+      },
+
+      areasSettings: {
+        autoZoom: true
+      },
+
+      valueLegend: {
+        right: 10,
+        minValue: "little",
+        maxValue: "a lot!"
+      },
+
+      "export": {
+        "enabled": true
+      }
+
+    } );
+
 });

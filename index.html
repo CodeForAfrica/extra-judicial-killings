@@ -33,37 +33,40 @@
           <br clear="all"/>
           <hr>
           <section>
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                County
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Nairobi <span class="num">406</span></a></li>
-                <li><a href="#">Machakos <span class="num">70</span></a></li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Age
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Under 18 <span class="num">4</span></a></li>
-                <li><a href="#">18-34 <span class="num">414</span></a></li>
-                <li><a href="#">35-54 <span class="num">30</span></a></li>
-                <li><a href="#">55+ <span class="num">3</span></a></li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Gender
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Male <span class="num">450</span></a></li>
-                <li><a href="#">Female <span class="num">6</span></a></li>
-              </ul>
+            <h1>Cases</h1>
+            <div style="float:right;">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  County
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Nairobi <span class="num">406</span></a></li>
+                  <li><a href="#">Machakos <span class="num">70</span></a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Age
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Under 18 <span class="num">4</span></a></li>
+                  <li><a href="#">18-34 <span class="num">414</span></a></li>
+                  <li><a href="#">35-54 <span class="num">30</span></a></li>
+                  <li><a href="#">55+ <span class="num">3</span></a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Gender
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Male <span class="num">450</span></a></li>
+                  <li><a href="#">Female <span class="num">6</span></a></li>
+                </ul>
+              </div>
             </div>
             <br clear="all"/>
             <br clear="all"/>
@@ -82,7 +85,7 @@
               </div>
               <div class="tags">
                 <span>Man</span>
-                <span>18</span>
+                <span>25</span>
                 <span>Nairobi</span>
               </div>
               <small><script>document.write(new Date())</script></small>
@@ -92,7 +95,15 @@
           <br clear="all"/>
           <hr>
           <section>
+            <h1>Cases per year</h1>
             <div id="chart-container">Loading</div>
+          </section>
+          <br clear="all"/>
+          <br clear="all"/>
+          <hr>
+          <section>
+            <h1>Cases per county</h1>
+            <div id="chartdiv"> </div>
           </section>
 
         </section>
@@ -114,5 +125,8 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
   <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+  <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+  <script src="https://www.amcharts.com/lib/3/maps/js/kenyaHigh.js"></script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
 </html>
